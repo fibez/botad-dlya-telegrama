@@ -1,0 +1,48 @@
+##
+##      messages_config.json
+##
+{
+    "title": "Это сообщение будет в канале, а не в чате",       ## обязательное поле
+    "image_path": "img/batat.jpg",                              ## необязательное поле
+    "chat_messages": [                                          ## необазательное поле, отправка сообщений в канал в виде реплая
+        {
+            "text": "Это сообщение будет в чате",               ## если chat_message существует, то должен быть хотя бы..
+            "image_path": "img/batat.jpg"                       ##.. 1 элемент в массиве
+        },
+        {
+            "text": "Это сообщение будет в чате"
+        },
+        {
+            "text": "Это сообщение будет в чате",
+            "image_path": "img/batat.jpg"
+        }
+    ]
+}
+##
+##      channels_config.json
+##
+{
+    "channels": [
+        {
+            "name": "Name1",
+            "id": -100**********,
+            "chat": {
+                "chat_id": -100**********,
+                "chat_name": "Name1 Chat"
+            }
+        },
+        {
+            "name": "Name2",
+            "id": -100**********,
+            "chat": {
+                "chat_id": -100**********,
+                "chat_name": "Name2 Chat"
+            }
+        }
+    ]
+}
+##
+##      .env
+##
+TELEGRAM_BOT_TOKEN=TOKEN
+CONFIG_FILE_PATH=channels_config_path

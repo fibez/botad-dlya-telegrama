@@ -3,4 +3,7 @@ avs_channels_config.json
 avs_first_test_channel.json
 one_test_channel.json
 messages_config.json
+
+img/
+
 .env
